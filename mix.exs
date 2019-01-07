@@ -1,7 +1,7 @@
 defmodule Confex.Mixfile do
   use Mix.Project
 
-  @version "3.3.1"
+  @version "3.4.0"
 
   def project do
     [
@@ -47,9 +47,8 @@ defmodule Confex.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:ex_doc, ">= 0.16.0", only: [:dev, :test]},
+      {:ex_doc, "~> 0.19", only: :dev},
       {:excoveralls, ">= 0.7.0", only: [:dev, :test]},
-      {:dogma, "> 0.1.0", only: [:dev, :test]},
       {:credo, ">= 0.8.0", only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
       {:inch_ex, ">= 0.0.0", only: :docs}
